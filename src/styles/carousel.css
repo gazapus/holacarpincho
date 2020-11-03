@@ -1,0 +1,154 @@
+:root {
+    --carousel-width: 100vw;
+    --color-main: rgb(162, 26, 252);
+    --color-main-hover: rgb(118, 0, 197);
+}
+
+body {
+    margin: 0;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: rgba(76, 0, 130, 0.849);
+    background-color: rgba(12, 12, 12, 0.295);
+    box-sizing: border-box;
+}
+
+.carouselContainer__space {
+    width: var(--carousel-width);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    min-height: 180px;
+    height: 50vh;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel_image {
+    width: 60%;
+    background-image: url("../images/gato.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.carousel__descriptionContainer {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.carousel__title {
+    flex-grow: 1;
+    background-color: white;
+    color: var(--color-main);
+    margin: 0;
+    padding: 2vw 1vw 0 2vw;
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.carousel__description {
+    flex-grow: 1;
+    background-color: white;
+    margin: 0;
+    padding: 2vw;
+    font-size: 1.1em;
+    overflow-y: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-indent: 1em;
+}
+
+.carousel__options {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1vw 2vw 1vw 2vw;
+}
+
+.options__readMore {
+    background-color: var(--color-main);
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.8vw 1vw 0.8vw 1vw;
+    color: white;
+    height: 2.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options__button {
+    border-style: none;
+    background-color: var(--color-main);
+    border-radius: 5px;
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.boton_flecha {
+    width: 100%;
+}
+
+.options__button:hover, .options__readMore:hover {
+    cursor: pointer;
+    background-color: var(--color-main-hover);
+    transition: 0.5s;
+}
+
+.options__button:active, .options__readMore:active {
+    outline: none;
+} 
+
+@media (orientation: portrait) {
+    .carousel {
+        height: 35vh;
+    }
+    .carousel_image {
+        width: 50%;
+    }
+    .carousel__descriptionContainer {
+        width: 50%;
+    }
+    .carousel__title {
+        font-size: 1.3em;
+        padding-left: 1em;
+    }
+    .carousel__description {
+        padding: 1em;
+        font-size: 0.9em;
+        text-indent: 0.7em;
+        line-height: 1.3em;
+    }
+    .carousel__options {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+    .options__readMore {
+        height: 2em;
+    }
+    .options__button {
+        height: 2em;
+        width: 2em;
+    }
+}
