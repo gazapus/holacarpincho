@@ -121,7 +121,7 @@ body {
     outline: none;
 } 
 
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width: 800px){
     .carousel {
         height: 35vh;
     }

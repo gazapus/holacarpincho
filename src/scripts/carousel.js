@@ -21,11 +21,11 @@ window.onresize = () => {
 
 function resizeWidth() {
     let width = window.innerWidth;
-    let finalWidth = 100;
+    let finalWidth = 96;
     if (width > 1200) {
-        finalWidth = 70;
-    } else if (width > 800 && width < 1200) {
-        finalWidth = -0.075 * width + 160;
+        finalWidth = 80;
+    } else if (width > 1024 && width < 1200) {
+        finalWidth = -0.114 * width + 216.364;
     }
     document.documentElement.style.setProperty('--carousel-width', finalWidth + 'vw');
     widthState = finalWidth;
