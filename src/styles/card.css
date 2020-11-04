@@ -18,7 +18,7 @@ body {
     flex-direction: row;
     width: var(--cardsContainer-width);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -26,29 +26,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 20%;
     height: 30vw;
     min-height: 300px;
     min-width: 300px;
     box-sizing: border-box;
+    flex: 1;
 }
 
 @media (max-width: 1300px) {
     .card {   
-        max-width: 25%;
         height: 34vw;
-    }
-}
-
-@media (max-width: 800px) {
-    .card {   
-        max-width: 50%;
     }
 }
 
 @media (orientation: portrait) {
     .card {   
-        max-width: 90%;
         min-height: 300px;
     }
 }
