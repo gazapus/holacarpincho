@@ -9,6 +9,7 @@ window.onload = () => {
     duplicateSlides();
     hideFirstSlide();
     addListenerToButtons();
+    resizeWidthCards();
 }
 
 window.onresize = () => {
@@ -17,6 +18,7 @@ window.onresize = () => {
     duplicateSlides();
     hideFirstSlide();
     addListenerToButtons();
+    resizeWidthCards();
 }
 
 function resizeWidth() {
@@ -26,6 +28,8 @@ function resizeWidth() {
         finalWidth = 80;
     } else if (width > 1024 && width < 1200) {
         finalWidth = -0.114 * width + 216.364;
+    } else if(width < 500) {
+        finalWidth = 100;
     }
     document.documentElement.style.setProperty('--carousel-width', finalWidth + 'vw');
     widthState = finalWidth;
