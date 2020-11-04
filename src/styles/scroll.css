@@ -1,0 +1,36 @@
+.top {
+    width: 4.5vmax;
+    height: 4.5vmax;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: rgb(168, 62, 0);
+    background-color: rgb(168, 62, 0);
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.4s;
+    font-size: 3vmax;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.top:active {
+    outline: none;
+}
+
+.top:hover {
+    cursor: pointer;
+    border-color: rgba(19, 0, 27, 0.61);
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgb(168, 62, 0);
+}
+
+@media (max-width: 800px) {
+    .top {
+        width: 5.5vmax;
+        height: 5.5vmax;
+    }
+}

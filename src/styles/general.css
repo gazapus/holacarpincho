@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 251, 246);
+    margin: 0;
+}
+
+.selected {
+    font-weight: bold;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -65,6 +78,7 @@
     font-size: 0.7em;
     font-family: 'Grandstander', cursive;
 }
+
 
 @media (max-width: 800px) {
     .header {

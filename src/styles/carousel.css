@@ -1,7 +1,7 @@
 :root {
     --carousel-width: 100vw;
-    --color-main: rgb(162, 26, 252);
-    --color-main-hover: rgb(118, 0, 197);
+    --color-main: rgb(202, 79, 8);
+    --color-main-hover: rgb(245, 106, 26);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     flex-direction: row;
     border-width: 2px 0 2px 0;
     border-style: solid;
-    border-color: rgba(76, 0, 130, 0.849);
+    border-color:rgb(168, 62, 0);
 }
 
 .carousel {
