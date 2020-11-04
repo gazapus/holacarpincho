@@ -17,7 +17,9 @@
 .menu__title {
     display: flex;
     margin: 0;
-    font-family: 'Grandstander', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-indent: 0.5em;
 }
 
 .menu__icon {
