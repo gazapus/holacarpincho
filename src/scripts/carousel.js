@@ -1,7 +1,9 @@
 let carouselInnerContainer = document.getElementsByClassName("carouselContainer__space")[0];
+let carousels = document.getElementsByClassName("carousel");
 
 let widthState = 100;
 let ORIGINALS_SLIDES;
+var rotationInterval;
 
 window.onload = () => {
     ORIGINALS_SLIDES = carouselInnerContainer.innerHTML;
@@ -10,9 +12,11 @@ window.onload = () => {
     hideFirstSlide();
     addListenerToButtons();
     resizeWidthCards();
+    rotationInterval = setInterval(moveToNext, 8000);
 }
 
 window.onresize = () => {
+    rotacion_activada = false;
     carouselInnerContainer.innerHTML = ORIGINALS_SLIDES;
     resizeWidth();
     duplicateSlides();
@@ -21,6 +25,14 @@ window.onresize = () => {
     resizeWidthCards();
 }
 
+carouselInnerContainer.addEventListener('mouseenter', () => {
+    clearInterval(rotationInterval);
+});
+
+carouselInnerContainer.addEventListener('mouseleave', () => {
+    rotationInterval = setInterval(moveToNext, 8000);
+});
+
 function resizeWidth() {
     let width = window.innerWidth;
     let finalWidth = 96;
@@ -28,7 +40,7 @@ function resizeWidth() {
         finalWidth = 80;
     } else if (width > 1024 && width < 1200) {
         finalWidth = -0.114 * width + 216.364;
-    } else if(width < 500) {
+    } else if (width < 500) {
         finalWidth = 100;
     }
     document.documentElement.style.setProperty('--carousel-width', finalWidth + 'vw');

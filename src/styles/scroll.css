@@ -2,7 +2,7 @@
     width: 4.5vmax;
     height: 4.5vmax;
     border-radius: 50%;
-    border-style: groove;
+    border-style: outset;
     border-color: rgb(168, 62, 0);
     background-color: rgb(168, 62, 0);
     position: fixed;
@@ -15,6 +15,7 @@
     transition-duration: 0.4s;
     font-size: 3vmax;
     color: rgba(0, 0, 0, 0.815);
+    display: none;
 }
 
 .top:active {
