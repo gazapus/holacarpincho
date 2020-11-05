@@ -11,6 +11,8 @@ window.onload = () => {
     addListenerToButtons();
     resizeWidthCards();
     rotationInterval = setInterval(moveToNext, 8000);
+    setCardImage();
+
 }
 
 window.onresize = () => {

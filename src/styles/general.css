@@ -79,6 +79,14 @@ body {
     font-family: 'Grandstander', cursive;
 }
 
+.page__date {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    text-align: right;
+    margin: 0;
+    color: rgb(221, 82, 1);
+}
+
 .page__description {
     font-size: 1.4em;
     text-align: center;
@@ -86,6 +94,53 @@ body {
     letter-spacing: 0.15em;
     width: 80%;
     margin-top: 0.5em;
+}
+
+.left {
+    text-align: left;
+}
+
+.page__title {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.15em;
+    width: 80%;
+    margin-top: 0.5em;
+    line-height: 1.4em;
+    text-transform: lowercase;
+}
+
+.page__title::first-letter {
+    text-transform: uppercase;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.page__imageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page__image{
+    width: 60%;
+}
+
+.page__imageCaption {
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+.page__note {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 500;
 }
 
 @media (max-width: 800px) {
@@ -104,6 +159,25 @@ body {
 
     .page__description {
         font-size: 1.1em;
+        width: 85%;
+    }
+
+    .page__image{
+        width: 100%;
+    }
+
+    .page__note {
+        width: 90%;
+    }
+
+    .page__imageCaption {
+        width: 80%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .page__image{
         width: 85%;
     }
 }

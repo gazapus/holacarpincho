@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" media="(min-width: 800px)" href="../styles/navbar-desktop.css" />
+    <link rel="stylesheet" media="(max-width: 800px)" href="../styles/navbar-mobil.css" />
+    <link rel="stylesheet" href="../styles/card.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/scroll.css" />
+    <link rel="icon" href="../images/carpincho.png" />
+    <title>Hola Carpincho | Actualidad</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__bar">
+            <span class="menu__titleContainer">
+                <img src="../images/carpinchosilueta.png" alt="" class="menu__icon" />
+                <h1 class="menu__title">Hola Carpincho</h1>
+            </span>
+            <button class="menu__button">
+                <img src="../images/menu-icon.svg" alt="menu" class="menu__img" />
+            </button>
+        </div>
+        <ul class="menu__list menu__list--hidden">
+            <li class="list__item">
+                <a href="../index.html" class="item__link">
+                    INICIO
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="../actualidad.html" class="item__link selected">
+                    ACTUALIDAD
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="../crianza.html" class="item__link">
+                    CRIANZA
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="../veterinaria.html" class="item__link">
+                    VETERINARIA
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="../fotos.html" class="item__link">
+                    FOTOS
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="../nosotros.html" class="item__link">
+                    NOSOTROS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title"> Hola Carpincho</h1>
+        <img src="../images/carpinchosilueta.png" alt="" class="header__image" />
+    </header>
+
+    <div class="cardsContainer2">
+        <span class="page__date">9 de Junio de 2020</span>
+        <h3 class="page__title">
+            Rescataron a un carpincho que se cayó en una alcantarilla en la Quebrada de Humahuaca
+        </h3>
+        <p class="page__description left">
+            El animal tiene su hábitat natural en zonas boscosas, por lo que llamó la atención que apareciera allí.
+            Según trascendió, escapaba de unos perros.
+        </p>
+        <div class="cardsContainer center">
+            <figure class="page__imageContainer">
+                <img src="../images/act_rescate.png" alt="image" class="page__image" />
+            </figure>
+            <p class="page__note">
+                El Centro de Atención de la Fauna Autóctona de Jujuy (CAFAJu) y los Bomberos de la Policía de la ciudad
+                rescataron un carpincho (Hydrochoerus hydrochaeris) que cayó en una alcantarilla mientras huía de unos
+                perros.
+                <br />
+                El rescate se realizó luego de que vecinos del barrio San José de Humahuaca alertaran a las autoridades
+                policiales sobre la presencia del animal, que tiene su hábitat natural en zonas boscosas y no es
+                autóctono de la Quebrada de Humahuaca.
+            </p>
+            <figure class="page__imageContainer">
+                <img src="../images/act_rescate2.jpg" alt="image" class="page__image" />
+            </figure>
+            <br />
+            <p class="page__note">
+                “El ejemplar presentaba un buen estado y fue trasladado a un lugar seguro, hasta que personal
+                especializado de Fauna Silvestre de la provincia tomó intervención”, explicó el sargento Raúl Merlo de
+                la Unidad Regional 3 de Humahuaca.
+                <br/>
+                Según el suboficial, el carpincho estaba en un sector de cloacas al que cayó después de ser perseguido
+                por unos perros, de acuerdo al relato de algunos vecinos.
+                <br/>
+                <br/>
+                Por esa razón, se activó una comisión de rescate entre bomberos y efectivos de la Unidad Regional 3 que,
+                después de utilizar cuerdas, pudieron ponerlo a salvo.
+                <br/>
+                “Los carpinchos forman parte de la fauna silvestre de la provincia y habitan la región de las Yungas,
+                que se caracteriza por ser una zona selvática y húmeda, por lo que no son animales sociables“, apuntó la
+                fuente policial.
+            </p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer__icons">
+            <a href="#">
+                <img src="../images/facebook-sm.png" alt="facebook" class="footer__icon" />
+            </a>
+            <a href="#">
+                <img src="../images/twitter-sm.png" alt="twitter" class="footer__icon" />
+            </a>
+            <a href="#">
+                <img src="../images/instagram-sm.png" alt="instagram" class="footer__icon" />
+            </a>
+        </div>
+        <div class="footer_legals">
+            •<a href="#" class="footer_legal">
+                Terms of use
+            </a>
+            •<a href="#" class="footer_legal">
+                Privacy Policy
+            </a>
+        </div>
+        <p class="footer__text">© Gazapus Dev</p>
+    </div>
+    <button class="top" onclick="topFunction()">▲</button>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/pages.js"></script>
+    <script src="../scripts/card.js"></script>
+
+</body>
+
+</html>

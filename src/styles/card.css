@@ -28,7 +28,7 @@ body {
     align-items: center;
     height: 30vw;
     min-height: 300px;
-    min-width: 300px;
+    min-width: 25%;
     box-sizing: border-box;
     flex: 1;
 }
@@ -81,6 +81,11 @@ body {
     font-size: 1.15em;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
+    text-transform: lowercase;
+}
+
+.card__title::first-letter {
+    text-transform: uppercase;
 }
 
 .card__description {
