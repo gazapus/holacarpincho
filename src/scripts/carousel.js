@@ -1,6 +1,4 @@
 let carouselInnerContainer = document.getElementsByClassName("carouselContainer__space")[0];
-let carousels = document.getElementsByClassName("carousel");
-
 let widthState = 100;
 let ORIGINALS_SLIDES;
 var rotationInterval;
@@ -16,13 +14,14 @@ window.onload = () => {
 }
 
 window.onresize = () => {
-    rotacion_activada = false;
     carouselInnerContainer.innerHTML = ORIGINALS_SLIDES;
     resizeWidth();
     duplicateSlides();
     hideFirstSlide();
     addListenerToButtons();
     resizeWidthCards();
+    clearInterval(rotationInterval);
+    rotationInterval = setInterval(moveToNext, 8000);
 }
 
 carouselInnerContainer.addEventListener('mouseenter', () => {

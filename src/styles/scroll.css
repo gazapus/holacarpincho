@@ -3,8 +3,8 @@
     height: 4.5vmax;
     border-radius: 50%;
     border-style: outset;
-    border-color: rgb(168, 62, 0);
-    background-color: rgb(168, 62, 0);
+    border-color: rgba(182, 72, 8, 0.863);
+    background-color: rgba(185, 74, 9, 0.863);
     position: fixed;
     bottom: 2vw;
     right: 2vw;
@@ -18,7 +18,7 @@
     display: none;
 }
 
-.top:active {
+.top:active, .top:focus {
     outline: none;
 }
 

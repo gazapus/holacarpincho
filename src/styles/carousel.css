@@ -2,6 +2,7 @@
     --carousel-width: 100vw;
     --color-main: rgb(202, 79, 8);
     --color-main-hover: rgb(245, 106, 26);
+    --color-main-active: #ff843d;
 }
 
 body {
@@ -114,8 +115,13 @@ body {
     transition: 0.5s;
 }
 
-.options__button:active, .options__readMore:active {
+.options__button:active, 
+.options__readMore:active,
+.options__button:focus,
+.options__readMore:focus {
     outline: none;
+    background-color: var(--color-main-active);
+
 } 
 
 @media (orientation: portrait), (max-width: 800px){
