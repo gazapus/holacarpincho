@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" media="(min-width: 800px)" href="./styles/navbar-desktop.css" />
+    <link rel="stylesheet" media="(max-width: 800px)" href="./styles/navbar-mobil.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/scroll.css" />
+    <link rel="icon" href="./images/carpincho.png" />
+    <title>Hola Carpincho | Nosotros</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu__bar">
+            <span class="menu__titleContainer">
+                <img src="./images/carpinchosilueta.png" alt="" class="menu__icon" />
+                <h1 class="menu__title">Hola Carpincho</h1>
+            </span>
+            <button class="menu__button">
+                <img src="./images/menu-icon.svg" alt="menu" class="menu__img" />
+            </button>
+        </div>
+        <ul class="menu__list menu__list--hidden">
+            <li class="list__item">
+                <a href="index.html" class="item__link">
+                    INICIO
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="actualidad.html" class="item__link">
+                    ACTUALIDAD
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="crianza.html" class="item__link">
+                    CRIANZA
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="veterinaria.html" class="item__link">
+                    VETERINARIA
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="fotos.html" class="item__link">
+                    FOTOS
+                </a>
+            </li>
+            <li class="list__item">
+                <a href="nosotros.html" class="item__link selected">
+                    NOSOTROS
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title"> Hola Carpincho</h1>
+        <img src="images/carpinchosilueta.png" alt="" class="header__image" />
+    </header>
+
+    <div class="cardsContainer2">
+        <u class="page__description">Nosotros</u>
+        <p class="page__description">
+            Somos una empresa de bla bla bla
+        </p>
+
+        <div class="cardsContainer"></div>
+            
+    </div>
+    <div class="footer">
+        <div class="footer__icons">
+            <a href="#">
+                <img src="images/facebook-sm.png" alt="facebook" class="footer__icon" />
+            </a>
+            <a href="#">
+                <img src="images/twitter-sm.png" alt="twitter" class="footer__icon" />
+            </a>
+            <a href="#">
+                <img src="images/instagram-sm.png" alt="instagram" class="footer__icon" />
+            </a>
+        </div>
+        <div class="footer_legals">
+            •<a href="#" class="footer_legal">
+                Terms of use
+            </a>
+            •<a href="#" class="footer_legal">
+                Privacy Policy
+            </a>
+        </div>
+        <p class="footer__text">© Gazapus Dev</p>
+    </div>
+    <button class="top" onclick="topFunction()">
+        ▲
+    </button>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/pages.js"></script>
+
+</body>
+
+</html>

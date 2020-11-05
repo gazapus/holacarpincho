@@ -8,11 +8,15 @@
 }
 
 .list__item {
+    display: flex;
+}
+
+.item__link{
     display: inline;
     padding: 14pt 14pt 0 14pt;
 }
 
-.list__item::after {
+.item__link::after {
     background: rgb(180, 66, 0);
     content: '';
     display: block;
@@ -23,7 +27,7 @@
     width: 0;
 }
 
-.list__item:hover::after {
+.item__link:hover::after {
     width: 100%;
     transform: scaleX(1);
     transform-origin: 50% 50%;
