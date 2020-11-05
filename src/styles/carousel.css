@@ -38,9 +38,20 @@ body {
 
 .carousel_image {
     width: 60%;
-    background-image: url("../images/gato.jpg");
     background-repeat: repeat-x;
     background-size: cover;
+}
+
+.image1 {
+    background-image: url("../images/gato.jpg");
+}
+
+.image2 {
+    background-image: url("../images/gato2.jpg");
+}
+
+.image3 {
+    background-image: url("../images/gato3.jpg");
 }
 
 .carousel__descriptionContainer {
