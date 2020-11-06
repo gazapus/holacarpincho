@@ -36,10 +36,6 @@ body {
     flex-shrink: 0;
 }
 
-.carousel:hover {
-    cursor: pointer;
-}
-
 .carousel_image {
     width: 60%;
     background-repeat: repeat-x;
